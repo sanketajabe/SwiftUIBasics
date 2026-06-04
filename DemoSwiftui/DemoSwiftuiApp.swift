@@ -12,6 +12,7 @@ struct DemoSwiftuiApp: App {
     var body: some Scene {
         WindowGroup {
             TextExample()
+                .preferredColorScheme(.dark)
         }
     }
 }

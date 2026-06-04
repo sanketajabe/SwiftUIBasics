@@ -67,13 +67,16 @@ struct ShapesBasics: View {
         
         /// Mark : Rectangle
         Rectangle()
-           
+            .fill(
+                //Color(red: 1.9, green: 6.0, blue: 0.1).opacity(1.0)
+                Color(UIColor.systemGray)
+            )
             //.frame(width: 300, height: 200)
             //.foregroundColor(.mint)
             //.stroke(Color.secondary,lineWidth: 10)
             //.padding([.top, .bottom, .trailing, .leading])
             //.frame(width: 200, height: 100)
-            .trim(from: 0.5, to: 1.0)
+            //.trim(from: 0.5, to: 1.0)
             //.rotationEffect(.degrees(90))
         
         /// Mark : RoundedRectangle

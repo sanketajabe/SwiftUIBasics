@@ -31,4 +31,5 @@ struct TextExample: View {
 
 #Preview {
     TextExample()
+        .preferredColorScheme(.dark)
 }
