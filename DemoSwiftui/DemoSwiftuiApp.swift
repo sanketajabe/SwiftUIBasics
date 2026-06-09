@@ -11,8 +11,8 @@ import SwiftUI
 struct DemoSwiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            TextExample()
-                .preferredColorScheme(.dark)
+            GradientBasics()
+                .preferredColorScheme(.light)
         }
     }
 }

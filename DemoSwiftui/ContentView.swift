@@ -79,15 +79,17 @@ struct ContentView: View {
                maxHeight: .infinity)
         
         .background(
-            LinearGradient(
-                colors: [
-                    Color.teal.opacity(0.6),
-                    Color.teal.opacity(0.2),
-                    Color.teal.opacity(0.1)
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
+//            LinearGradient(
+//                colors: [
+//                    Color.teal.opacity(0.6),
+//                    Color.teal.opacity(0.2),
+//                    Color.teal.opacity(0.1)
+//                ],
+//                startPoint: .top,
+//                endPoint: .bottom
+//            )
+            
+            RadialGradient(colors: [Color.red, Color.orange, Color.yellow, Color.green, Color.blue, Color.indigo, Color.purple], center: .bottom, startRadius: 100, endRadius: 500)
         )
     }
 }
