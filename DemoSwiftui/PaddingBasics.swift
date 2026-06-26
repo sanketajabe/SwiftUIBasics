@@ -32,11 +32,11 @@ struct PaddingBasics: View {
         
         VStack(alignment: .center){
             Rectangle()
+                .cornerRadius(5)
                 .frame(width: 300, height: 50)
                 .foregroundColor(.white)
                 .padding()
-                .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 10)
-                .cornerRadius(10)
+                .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 0)
                 .overlay(
                     Text("Email Address")
                         .foregroundColor(Color.gray)
@@ -46,9 +46,10 @@ struct PaddingBasics: View {
             Rectangle()
                 .frame(width: 300, height: 50)
                 .foregroundColor(.white)
+                .cornerRadius(5)
                 .padding()
-                .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 10)
-                .cornerRadius(10)
+                .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 0)
+               
                 .overlay(
                     Text("Password")
                         .foregroundColor(Color.gray)
