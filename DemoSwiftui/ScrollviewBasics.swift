@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScrollviewBasics: View {
+    let colors: [Color] = [.red, .green, .blue, .yellow]
     var body: some View {
         //        ScrollView(.vertical, showsIndicators: false) {
         //            VStack{
@@ -21,7 +22,8 @@ struct ScrollviewBasics: View {
         //
         //        }
         //.scrollIndicators(.hidden)
-        
+    
+        /// Mark :- LazyVStack creates views only when they are about to appear on screen, making it much more efficient for large collections.
         
         ScrollView{
             LazyVStack {
@@ -40,6 +42,31 @@ struct ScrollviewBasics: View {
                 }
             }
         }
+        
+        
+//        ScrollView {
+//            VStack(spacing: 20) {
+//                ForEach(1...20, id: \.self) { index in
+//                    Text("Item \(index)")
+//                        .frame(maxWidth: .infinity)
+//                        .padding()
+//                        .background(Color.blue.opacity(0.2))
+//                        .cornerRadius(10)
+//                }
+//            }
+//            .padding()
+//        }
+        
+//        ScrollView(.horizontal, showsIndicators: false) {
+//            HStack {
+//                ForEach(colors.indices, id: \.self) { index in
+//                    RoundedRectangle(cornerRadius: 15)
+//                        .fill(colors[index])
+//                        .frame(width: 200, height: 150)
+//                }
+//            }
+//            .padding()
+//        }
     }
 }
 
